@@ -41,8 +41,9 @@ nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.9);backdrop-f
 .nav-links{display:flex;gap:30px;font-size:0.92rem;color:var(--label);font-weight:500;}
 .nav-links a:hover{color:var(--blue);}
 /* Hero */
-.hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,var(--indigo) 0%,var(--navy) 55%,#13213f 100%);}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 10%,rgba(47,107,255,0.28),transparent 60%),radial-gradient(ellipse 50% 45% at 10% 90%,rgba(37,211,102,0.16),transparent 55%);}
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--navy);}
+.hero::before{content:"";position:absolute;inset:0;background:url('alwayzon-hero-bg.png') center/cover no-repeat;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,18,38,0.9) 0%,rgba(10,18,38,0.68) 48%,rgba(10,18,38,0.28) 100%);}
 .hero-in{position:relative;z-index:2;max-width:760px;padding:120px 0 100px;}
 .hero .brand-row{display:flex;align-items:center;gap:10px;margin-bottom:26px;font-family:var(--head);font-weight:700;font-size:1.15rem;}
 .hero .brand-row img{height:40px;width:40px;border-radius:8px;}
